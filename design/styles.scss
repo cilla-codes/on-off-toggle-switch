@@ -1,0 +1,103 @@
+/** RESET **/
+html,
+body,
+div,
+span,
+h1,
+h2,
+p,
+a,
+em,
+img,
+small,
+strike,
+strong,
+b,
+u,
+i,
+center,
+ul,
+li,
+fieldset,
+form,
+label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body,
+p,
+h1,
+ul,
+nav,
+input,
+form {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+}
+
+// Main Styles
+
+.container {
+  background-color: #fbfafa;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .switch {
+    position: relative;
+    width: 19rem;
+    height: 9rem;
+    border-radius: 5rem;
+    cursor: pointer;
+  }
+
+  .slider {
+    position: absolute;
+    left: 0.9rem;
+    top: 0.7rem;
+    background-color: #fff;
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+  }
+
+  .off {
+    background-color: #fbb303;
+  }
+}
