@@ -89,7 +89,6 @@ body {
 
   .slider {
     position: absolute;
-    left: 0.9rem;
     top: 0.7rem;
     background-color: #fff;
     width: 7.5rem;
@@ -99,5 +98,15 @@ body {
 
   .off {
     background-color: #fbb303;
+    .slider {
+      left: 0.9rem;
+    }
+  }
+
+  .on {
+    background-color: #02a3fa;
+    .slider {
+      right: 0.9rem;
+    }
   }
 }
