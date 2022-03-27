@@ -1,0 +1,123 @@
+/** RESET **/
+html,
+body,
+div,
+span,
+h1,
+h2,
+p,
+a,
+em,
+img,
+small,
+strike,
+strong,
+b,
+u,
+i,
+center,
+ul,
+li,
+fieldset,
+form,
+label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body,
+p,
+h1,
+ul,
+nav,
+input,
+form {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+}
+
+// Main Styles
+
+.container {
+  background-color: #fbfafa;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 19rem;
+  height: 9rem;
+
+  input {
+    display: none;
+
+    &:checked + .slider {
+      background-color: #02a3fa;
+      &::before {
+        transform: translateX(132%);
+      }
+    }
+  }
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fbb303;
+  transition: 0.4s;
+  border-radius: 73px;
+
+  &:before {
+    position: absolute;
+    content: '';
+    height: 7.5rem;
+    width: 7.5rem;
+    left: 0.8rem;
+    bottom: 0.8rem;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+}
