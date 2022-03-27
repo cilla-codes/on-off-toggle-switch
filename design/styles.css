@@ -1,0 +1,121 @@
+/** RESET **/
+html,
+body,
+div,
+span,
+h1,
+h2,
+p,
+a,
+em,
+img,
+small,
+strike,
+strong,
+b,
+u,
+i,
+center,
+ul,
+li,
+fieldset,
+form,
+label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+p,
+h1,
+ul,
+nav,
+input,
+form {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+}
+
+.container {
+  background-color: #fbfafa;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .switch {
+  position: relative;
+  width: 19rem;
+  height: 9rem;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+.container .slider {
+  position: absolute;
+  top: 0.7rem;
+  background-color: #fff;
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+}
+
+.container .off {
+  background-color: #fbb303;
+}
+
+.container .off .slider {
+  left: 0.9rem;
+}
+
+.container .on {
+  background-color: #02a3fa;
+}
+
+.container .on .slider {
+  right: 0.9rem;
+}
+/*# sourceMappingURL=styles.css.map */
